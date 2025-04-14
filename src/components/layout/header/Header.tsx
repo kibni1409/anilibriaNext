@@ -53,7 +53,7 @@ const Header = () => {
                 dropdownClassName={styles.dropdown}
                 getPopupContainer={(trigger) => trigger.parentNode}
             >
-                {result.map(option => (
+                {result?.map(option => (
                     <Option 
                         key={option.name.main}
                         value={option.alias} 

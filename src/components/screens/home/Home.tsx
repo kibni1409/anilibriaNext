@@ -33,16 +33,15 @@ const HomePage = () => {
       setError(null);
       
       const response = await ReleaseService.getReleases(page);
-      
-      if (response?.list) {
-        setReleases(response.list);
-        if (response.pagination) {
+      if (response?.data) {
+        setReleases(response.data);
+        if (response.meta.pagination) {
           setPagination(prev => ({
             ...prev,
-            current: response.pagination.current_page,
-            pageSize: response.pagination.per_page,
-            total: response.pagination.total,
-            totalPages: response.pagination.total_pages
+            current: response.meta.pagination.current_page,
+            pageSize: response.meta.pagination.per_page,
+            total: response.meta.pagination.total,
+            totalPages: response.meta.pagination.total_pages
           }));
         }
       }

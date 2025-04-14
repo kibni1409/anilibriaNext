@@ -56,8 +56,9 @@ class ApiClient {
   };
 
   private handleResponse = <T>(response: AxiosResponse<T>): T => {
-    // Возвращаем только данные из ответа
-    return response.data;
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    return response?.data?.data ? response.data : response;
   };
 
   private handleResponseError = (error: AxiosError): Promise<never> => {

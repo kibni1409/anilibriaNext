@@ -34,6 +34,8 @@ export interface PaginationMeta {
 }
 
 export interface ApiResponse<T> {
-  list: T[];
-  pagination: PaginationMeta;
-} 
+  data: T[];
+  meta: {
+    pagination: PaginationMeta;
+  }
+}

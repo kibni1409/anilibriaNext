@@ -1,5 +1,5 @@
-import { ApiResponse } from '@/types';
-import { apiClient } from '@/services/api/client';
+import {ApiResponse} from '@/types';
+import {apiClient} from '@/services/api/client';
 import {TDataRelease, TRelease} from "@/services/types";
 
 export const ReleaseService = {
@@ -19,6 +19,6 @@ export const ReleaseService = {
     },
 
     async getSearch(text: string): Promise<TRelease[]> {
-        return apiClient.get<TRelease[]>(`app/search/releases/?query=${text}`);
+        return apiClient.get<TRelease[]>(`app/search/releases/?query=${text}`)
     }
 };
