@@ -1,0 +1,51 @@
+.HomeContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.HomeWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 950px; // Ширина контейнера для карточек
+  margin: 0 auto; // Центрирование контейнера
+  padding: 24px;
+  flex: 1;
+  
+  @media (max-width: 768px) {
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+  color: rgba(255, 255, 255, 0.8); // Для текста "X-Y из Z релизов"
+}
+
+.loaderWrapper {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.endMessage {
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.errorMessage {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #ff6b6b;
+    max-width: 600px;
+}

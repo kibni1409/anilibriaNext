@@ -1,0 +1,41 @@
+.ReleaseCard {
+  &Wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 440px;
+    padding: 20px;
+    background-color: #22233e;
+    border-radius: 10px;
+    width: 950px;
+  }
+
+  &Small {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &Info {
+    padding: 10px;
+    max-width: 600px;
+  }
+
+  &Header {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &Description {
+    width: 100%;
+    max-height: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}

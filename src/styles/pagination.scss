@@ -1,0 +1,51 @@
+.ant-pagination {
+    .ant-pagination-item,
+    .ant-pagination-prev,
+    .ant-pagination-next {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        
+        a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        &:hover {
+            border-color: #7b68ee;
+            
+            a {
+                color: #7b68ee;
+            }
+        }
+    }
+    
+    .ant-pagination-item-active {
+        background: #7b68ee;
+        border-color: #7b68ee;
+        
+        a {
+            color: white;
+        }
+        
+        &:hover {
+            a {
+                color: white;
+            }
+        }
+    }
+    
+    .ant-pagination-disabled {
+        opacity: 0.5;
+        
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            
+            a {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+
+    .ant-pagination-total-text {
+        color: rgba(255, 255, 255, 0.8);
+    }
+} 

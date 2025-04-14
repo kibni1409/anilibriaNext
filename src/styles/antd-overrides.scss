@@ -1,0 +1,41 @@
+/* Глобальные стили для переопределения ant-design */
+.ant-select-selector {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px !important;
+}
+
+.ant-select-selection-search-input {
+  color: #fff !important;
+}
+
+.ant-select-selection-placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.ant-select-dropdown {
+  background: rgba(34, 35, 62, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ant-select-item {
+  color: #fff !important;
+  
+  &-option-active {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  &-option-selected {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+/* Стили для спиннера */
+.ant-spin {
+    color: #7b68ee;
+    
+    .ant-spin-dot-item {
+        background-color: #7b68ee;
+    }
+} 

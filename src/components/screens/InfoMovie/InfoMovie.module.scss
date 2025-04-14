@@ -1,0 +1,198 @@
+.InfoMovie {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1000px;
+  background: rgba(34, 35, 62, 0.7);
+  border-radius: 16px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  &Wrap {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    img {
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &Info {
+    color: #fff;
+  }
+
+  &Header {
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  &Small {
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.4;
+
+    strong {
+      margin-right: 4px;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 500;
+    }
+  }
+
+  &Description {
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-line;
+  }
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.ageBadge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.adult {
+    background-color: rgba(255, 71, 87, 0.2);
+    color: #ff4757;
+    border: 1px solid rgba(255, 71, 87, 0.3);
+  }
+
+  &.child {
+    background-color: rgba(46, 213, 115, 0.2);
+    color: #2ed573;
+    border: 1px solid rgba(46, 213, 115, 0.3);
+  }
+}
+
+.publishDay {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(46, 213, 115, 0.1);
+  color: #2ed573;
+  border: 1px solid rgba(46, 213, 115, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.episodesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.InfoMovieInfo {
+  padding: 0 20px;
+  color: #fff;
+}
+
+.titleWrapper {
+  margin-bottom: 16px;
+}
+
+.InfoMovieHeader {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.englishTitle {
+  display: block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 8px;
+}
+
+.ratingBlock {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.infoLabel {
+  color: rgba(255, 255, 255, 0.5);
+  min-width: 120px;
+}
+
+.infoValue {
+  color: #fff;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .InfoMovieHeader {
+    font-size: 24px;
+  }
+
+  .ratingBlock {
+    flex-wrap: wrap;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .infoLabel {
+    min-width: auto;
+  }
+}
